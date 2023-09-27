@@ -4,19 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Node js</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>List App</title>
   </head>
   <body>
-    <table border="1">
-      <tr>
+    <table>
+      <thead>
         <th>No</th>
         <th>Nama</th>
-      </tr>
+      </thead>
       <% users.forEach((user) => { %>
-      <tr>
+      <tbody>
         <td><%= user.id %></td>
         <td><%= user.name %></td>
-      </tr>
+      </tbody>
       <% }) %>
     </table>
   </body>
